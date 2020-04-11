@@ -1,0 +1,35 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  background-color: #fcfcfc;
+  font-size: 62.5%;
+}
+
+.header {
+  height: 64px;
+}
+
+h1 {
+  color: #9998f8;
+  /* font-family: "Nico Moji"; */
+  font-family: "M PLUS Rounded 1c";
+  text-align: center;
+  padding: 20px;
+  font-size: 2.4rem;
+}
+.main-img {
+  width: 100%;
+}
+
+@media (min-width: 960px) {
+  html {
+    margin: 0 20px;
+  }
+  h1 {
+    text-align: left;
+    padding-left: 0px;
+  }
+  .main-img {
+    max-width: 500px;
+  }
+}
