@@ -1,28 +1,39 @@
 <template>
-  <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Sea Slug generator"/>
+  <div>
+    <header class="header">
+      <h1 class="title">うみうしジェネレータ</h1>
+    </header>
+    <div class="container">
+      <img class="main-img" src="./assets/images/slug_1.png">
+    </div>
+    <div class="container">
+      <ul class="selector part-selector">
+        <!-- 選択状態 -->
+        <li class="item part-item selected">
+          <h2 class="part-item-name selected">からだ</h2>
+        </li>
+        <!-- 未選択状態 -->
+        <li class="item part-item">
+          <h2 class="part-item-name">頭触手</h2>
+        </li>
+        <li class="item part-item">
+          <h2 class="part-item-name">二次鰓</h2>
+        </li>
+        <li class="item part-item">
+          <h2 class="part-item-name">もよう</h2>
+        </li>
+        <li class="item part-item">
+          <h2 class="part-item-name">ふち</h2>
+        </li>
+      </ul>
+    </div>
   </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
-
 export default {
   name: 'App',
   components: {
-    HelloWorld
   }
 }
 </script>
-
-<style>
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
-}
-</style>

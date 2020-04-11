@@ -1,0 +1,80 @@
+* {
+  margin: 0px;
+  padding: 0px;
+
+}
+
+html {
+  background-color: #fcfcfc;
+  font-size: 62.5%;
+  font-family: "M PLUS Rounded 1c";
+}
+
+ul {
+  list-style: none;
+}
+
+.header {
+  height: 64px;
+}
+
+.title {
+  color: #9998f8;
+  /* font-family: "Nico Moji"; */
+  font-family: "M PLUS Rounded 1c";
+  text-align: center;
+  padding: 20px;
+  font-size: 2.4rem;
+  font-weight: bold;
+}
+
+.main-img {
+  width: 100%;
+}
+
+.part-selector {
+  display: flex;
+  background-color: #c2dbfe;
+  border-radius: 5px;
+  height: 48px;
+  padding: 0 2px;
+  margin: 2px 4px;
+}
+
+.part-item {
+  flex: 20px;
+  height: 40px;
+  border-radius: 6px;
+  margin: 4px 2px auto;
+}
+
+.part-item.selected {
+  background-color: #fefefe;
+}
+
+.part-item-name {
+  display: block;
+  color: #9998f8;
+  font-size: 1.4em;
+  text-align: center;
+  padding: 13px 4px;
+  opacity: 0.8;
+}
+
+.part-item-name.selected {
+  color: #f09dc9;
+  opacity: 1;
+}
+
+@media (min-width: 960px) {
+  html {
+    margin: 0 20px;
+  }
+  .title {
+    text-align: left;
+    padding-left: 0px;
+  }
+  .main-img {
+    max-width: 500px;
+  }
+}
