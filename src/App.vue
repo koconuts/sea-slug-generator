@@ -24,6 +24,24 @@
         </li>
       </ul>
     </div>
+    <div class="container">
+      <ul class="selector shape-selector">
+        <!-- 選択状態 -->
+        <li class="item shape-item selected">
+          <img class="shape-item-img" src="./assets/images/parts/slug-parts_1.png">
+        </li>
+        <!-- 未選択状態 -->
+        <li class="item shape-item">
+          <img class="shape-item-img" src="./assets/images/parts/slug-parts_1.png">
+        </li>
+        <li class="item shape-item">
+          <img class="shape-item-img" src="./assets/images/parts/slug-parts_1.png">
+        </li>
+        <li class="item shape-item">
+          <img class="shape-item-img" src="./assets/images/parts/slug-parts_1.png">
+        </li>
+      </ul>
+    </div>
   </div>
 </template>
 

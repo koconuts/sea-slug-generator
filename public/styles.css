@@ -33,8 +33,11 @@ ul {
   width: 100%;
 }
 
-.part-selector {
+.selector {
   display: flex;
+}
+
+.part-selector {
   background-color: #D1C4E9;
   border-radius: 5px;
   height: 40px;
@@ -63,6 +66,26 @@ ul {
 
 .part-item-name.selected {
   color: #26C6DA;
+}
+
+.shape-selector {
+  height: 80px;
+  margin-top: 16px;
+  justify-content: space-between;
+}
+
+.shape-item {
+  border-radius: 5px;
+  background-color: #E3F2FD;
+  margin: 0;
+  height: 80px;
+  width: 24%;
+}
+
+.shape-item-img {
+  display: block;
+  height: 64px;
+  margin: 8px auto;
 }
 
 @media (min-width: 960px) {
