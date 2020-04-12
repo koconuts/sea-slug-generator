@@ -29,84 +29,10 @@
               </li>
             </ul>
           </div>
-          <div class="selector-heading-container">
-              <h2 class="text selector-heading">頭触手</h2>
-          </div>
-          <div class="container">
-            <ul class="selector shape-selector">
-              <!-- 選択状態 -->
-              <li class="item shape-item selected">
-                <img class="shape-item-img" src="./assets/images/parts/slug-parts_1.png">
-              </li>
-              <!-- 未選択状態 -->
-              <li class="item shape-item">
-                <img class="shape-item-img" src="./assets/images/parts/slug-parts_1.png">
-              </li>
-              <li class="item shape-item">
-                <img class="shape-item-img" src="./assets/images/parts/slug-parts_1.png">
-              </li>
-              <li class="item shape-item">
-                <img class="shape-item-img" src="./assets/images/parts/slug-parts_1.png">
-              </li>
-            </ul>
-          </div>
-          <div class="container">
-            <ul class="selector color-selector">
-              <!-- 選択状態 -->
-              <li class="item color-item selected"></li>
-              <!-- 未選択状態 -->
-              <li class="item color-item"></li>
-              <li class="item color-item"></li>
-              <li class="item color-item"></li>
-              <li class="item color-item"></li>
-            </ul>
-            <ul class="selector color-selector">
-              <li class="item color-item"></li>
-              <li class="item color-item"></li>
-              <li class="item color-item"></li>
-              <li class="item color-item"></li>
-              <li class="item color-item"></li>
-            </ul>
-          </div>
-          <div class="selector-heading-container">
-              <h2 class="text selector-heading">二次鰓</h2>
-          </div>
-          <div class="container">
-            <ul class="selector shape-selector">
-              <!-- 選択状態 -->
-              <li class="item shape-item selected">
-                <img class="shape-item-img" src="./assets/images/parts/slug-parts_1.png">
-              </li>
-              <!-- 未選択状態 -->
-              <li class="item shape-item">
-                <img class="shape-item-img" src="./assets/images/parts/slug-parts_1.png">
-              </li>
-              <li class="item shape-item">
-                <img class="shape-item-img" src="./assets/images/parts/slug-parts_1.png">
-              </li>
-              <li class="item shape-item">
-                <img class="shape-item-img" src="./assets/images/parts/slug-parts_1.png">
-              </li>
-            </ul>
-          </div>
-          <div class="container">
-            <ul class="selector color-selector">
-              <!-- 選択状態 -->
-              <li class="item color-item selected"></li>
-              <!-- 未選択状態 -->
-              <li class="item color-item"></li>
-              <li class="item color-item"></li>
-              <li class="item color-item"></li>
-              <li class="item color-item"></li>
-            </ul>
-            <ul class="selector color-selector">
-              <li class="item color-item"></li>
-              <li class="item color-item"></li>
-              <li class="item color-item"></li>
-              <li class="item color-item"></li>
-              <li class="item color-item"></li>
-            </ul>
-          </div>
+          <whole-body></whole-body>
+          <parts></parts>
+          <!-- <pattern></pattern>
+          <back-ground></back-ground> -->
         </div>
         <div class="complete-btn">
           <p class="text complete-btn-text">かんせい</p>
@@ -117,9 +43,18 @@
 </template>
 
 <script>
+import WholeBody from './components/WholeBody.vue'
+import Parts from './components/Parts.vue'
+// import Pattern from './components/Pattern.vue'
+// import BackGround from './components/BackGround.vue'
+
 export default {
   name: 'App',
   components: {
-  }
+    WholeBody,
+    Parts,
+    // Pattern,
+    // BackGround
+  },
 }
 </script>
