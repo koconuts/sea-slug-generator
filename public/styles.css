@@ -5,9 +5,10 @@
 }
 
 html {
-  background-color: #fcfcfc;
+  background-color: #fefefe;
   font-size: 62.5%;
   font-family: "M PLUS Rounded 1c";
+  margin: 0px 16px;
 }
 
 ul {
@@ -19,7 +20,7 @@ ul {
 }
 
 .title {
-  color: #9998f8;
+  color: #26C6DA;
   /* font-family: "Nico Moji"; */
   font-family: "M PLUS Rounded 1c";
   text-align: center;
@@ -28,22 +29,30 @@ ul {
   font-weight: bold;
 }
 
+.body {
+  display: flex;
+  flex-direction: column;
+}
+
 .main-img {
   width: 100%;
 }
 
-.part-selector {
+.selector {
   display: flex;
-  background-color: #c2dbfe;
+}
+
+.part-selector {
+  background-color: #D1C4E9;
   border-radius: 5px;
-  height: 48px;
+  height: 40px;
   padding: 0 2px;
-  margin: 2px 4px;
+  margin-top: 16px;
 }
 
 .part-item {
   flex: 20px;
-  height: 40px;
+  height: 32px;
   border-radius: 6px;
   margin: 4px 2px auto;
 }
@@ -54,16 +63,34 @@ ul {
 
 .part-item-name {
   display: block;
-  color: #9998f8;
+  color: #fefefe;
   font-size: 1.4em;
   text-align: center;
-  padding: 13px 4px;
-  opacity: 0.8;
+  padding: 5px 0;
 }
 
 .part-item-name.selected {
-  color: #f09dc9;
-  opacity: 1;
+  color: #26C6DA;
+}
+
+.shape-selector {
+  height: 80px;
+  margin-top: 16px;
+  justify-content: space-between;
+}
+
+.shape-item {
+  border-radius: 5px;
+  background-color: #E3F2FD;
+  margin: 0;
+  height: 80px;
+  width: 24%;
+}
+
+.shape-item-img {
+  display: block;
+  height: 64px;
+  margin: 8px auto;
 }
 
 @media (min-width: 960px) {
@@ -73,6 +100,14 @@ ul {
   .title {
     text-align: left;
     padding-left: 0px;
+  }
+  .body {
+    display: flex;
+    flex-direction: row;
+  }
+  .right-container {
+    width: 50%;
+    margin: 0 4%;
   }
   .main-img {
     max-width: 500px;
