@@ -85,6 +85,11 @@ ul {
   margin: 0;
   height: 80px;
   width: 24%;
+  box-sizing: border-box;
+}
+
+.shape-item.selected {
+  border: solid 3px #26C6DA;
 }
 
 .shape-item-img {
