@@ -13,39 +13,14 @@
         <div class="selectors">
           <div class="container">
             <ul class="selector part-selector">
-              <!-- 選択状態 -->
-              <li class="item part-item">
+              <li class="item part-item" v-for="(item, key) in partsSelectorItems" :key="key">
                 <input
-                  id="radio_whole-body"
+                  :id=item.id
                   type="radio"
                   name="part-item"
                   checked
                 >
-                <label for="radio_whole-body" class="text part-item-label selected">からだ</label>
-              </li>
-              <li class="item part-item">
-                <input
-                  id="radio_parts"
-                  type="radio"
-                  name="part-item"
-                >
-                <label for="radio_parts" class="text part-item-label">ぱーつ</label>
-              </li>
-              <li class="item part-item">
-                <input
-                  id="radio_pattren"
-                  type="radio"
-                  name="part-item"
-                >
-                <label for="radio_pattren" class="text part-item-label">もよう</label>
-              </li>
-              <li class="item part-item">
-                <input
-                  id="radio_back-ground"
-                  type="radio"
-                  name="part-item"
-                >
-                <label for="radio_back-ground" class="text part-item-label">背景</label>
+                <label :for=item.id class="text part-item-label">{{ item.label }}</label>
               </li>
             </ul>
           </div>
@@ -76,5 +51,15 @@ export default {
     // Pattern,
     // BackGround
   },
+  data() {
+    return {
+      partsSelectorItems: [
+        {id: 'radio_whole-body', label: 'からだ'},
+        {id: 'radio_parts', label: 'ぱーつ'},
+        {id: 'radio_pattern', label: 'もよう'},
+        {id: 'radio_back-ground', label: '背景'}
+      ]
+    }
+  }
 }
 </script>
