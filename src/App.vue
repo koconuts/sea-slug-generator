@@ -18,13 +18,13 @@
             </li>
             <!-- 未選択状態 -->
             <li class="item part-item">
-              <h2 class="part-item-name">頭触手</h2>
-            </li>
-            <li class="item part-item">
-              <h2 class="part-item-name">二次鰓</h2>
+              <h2 class="part-item-name">ぱーつ</h2>
             </li>
             <li class="item part-item">
               <h2 class="part-item-name">もよう</h2>
+            </li>
+            <li class="item part-item">
+              <h2 class="part-item-name">背景</h2>
             </li>
           </ul>
         </div>
