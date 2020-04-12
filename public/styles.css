@@ -23,7 +23,6 @@ ul {
   color: #26C6DA;
   /* font-family: "Nico Moji"; */
   font-family: "M PLUS Rounded 1c";
-  text-align: center;
   padding: 20px;
   font-size: 2.4rem;
   font-weight: bold;
@@ -34,8 +33,16 @@ ul {
   flex-direction: column;
 }
 
+.text {
+  text-align: center;
+}
+
 .main-img {
   width: 100%;
+}
+
+.selectors {
+  margin-bottom: 88px;
 }
 
 .selector {
@@ -44,7 +51,7 @@ ul {
 
 .part-selector {
   background-color: #BBA8DE;
-  border-radius: 5px;
+  border-radius: 6px;
   height: 40px;
   padding: 0 2px;
   margin-top: 16px;
@@ -53,7 +60,7 @@ ul {
 .part-item {
   flex: 20px;
   height: 32px;
-  border-radius: 6px;
+  border-radius: 5px;
   margin: 4px 2px auto;
 }
 
@@ -65,7 +72,6 @@ ul {
   display: block;
   color: #fefefe;
   font-size: 1.4em;
-  text-align: center;
   padding: 5px 0;
 }
 
@@ -75,13 +81,12 @@ ul {
 
 .selector-heading-container {
   border: solid 1px #BBA8DE;
-  border-radius: 5px;
+  border-radius: 6px;
   margin-top: 16px;
   height: 32px;
 }
 
 .selector-heading {
-  text-align: center;
   color: #BBA8DE;
   font-size: 1.4rem;
   margin: 7px auto;
@@ -94,7 +99,7 @@ ul {
 }
 
 .shape-item {
-  border-radius: 5px;
+  border-radius: 6px;
   background-color: #E3F2FD;
   margin: 0;
   height: 80px;
@@ -121,7 +126,7 @@ ul {
 .color-item {
   border-radius: 50%;
   /* TODO: 正しい色にする */
-  background-color: #F09DF9;;
+  background-color: #F09DF9;
   margin: 0 4px;
   height: 100%;
   width: 48px;
@@ -130,6 +135,22 @@ ul {
 
 .color-item.selected {
   border: solid 3px #26C6DA;
+}
+
+.complete-btn {
+  position: fixed;
+  bottom: 16px;
+  background-color: #26C6DA;
+  border-radius: 50px;
+  height: 48px;
+  width: calc(100% - 32px);
+  margin-top: 24px;
+}
+
+.complete-btn-text {
+  color: #fefefe;
+  font-size: 1.8rem;
+  line-height: 48px;
 }
 
 @media (min-width: 960px) {
@@ -151,11 +172,19 @@ ul {
   .main-img {
     max-width: 500px;
   }
+  .selectors {
+    margin-bottom: 0px;
+  }
   .color-selector {
     height: 64px;
   }
   .color-item {
     width: 64px;
     margin: 0 16px;
+  }
+  .complete-btn {
+    position: static;
+    width: 100%;
+    margin-bottom: 24px;
   }
 }
