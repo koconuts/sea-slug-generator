@@ -5,9 +5,10 @@
 }
 
 html {
-  background-color: #fcfcfc;
+  background-color: #fefefe;
   font-size: 62.5%;
   font-family: "M PLUS Rounded 1c";
+  margin: 0px 16px;
 }
 
 ul {
@@ -19,7 +20,7 @@ ul {
 }
 
 .title {
-  color: #9998f8;
+  color: #26C6DA;
   /* font-family: "Nico Moji"; */
   font-family: "M PLUS Rounded 1c";
   text-align: center;
@@ -34,16 +35,16 @@ ul {
 
 .part-selector {
   display: flex;
-  background-color: #c2dbfe;
+  background-color: #D1C4E9;
   border-radius: 5px;
-  height: 48px;
+  height: 40px;
   padding: 0 2px;
-  margin: 2px 4px;
+  margin-top: 16px;
 }
 
 .part-item {
   flex: 20px;
-  height: 40px;
+  height: 32px;
   border-radius: 6px;
   margin: 4px 2px auto;
 }
@@ -54,16 +55,14 @@ ul {
 
 .part-item-name {
   display: block;
-  color: #9998f8;
+  color: #fefefe;
   font-size: 1.4em;
   text-align: center;
-  padding: 13px 4px;
-  opacity: 0.8;
+  padding: 5px 0;
 }
 
 .part-item-name.selected {
-  color: #f09dc9;
-  opacity: 1;
+  color: #26C6DA;
 }
 
 @media (min-width: 960px) {

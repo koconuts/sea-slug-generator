@@ -22,9 +22,6 @@
         <li class="item part-item">
           <h2 class="part-item-name">もよう</h2>
         </li>
-        <li class="item part-item">
-          <h2 class="part-item-name">ふち</h2>
-        </li>
       </ul>
     </div>
   </div>
