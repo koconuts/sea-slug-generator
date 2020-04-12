@@ -165,6 +165,9 @@ ul {
     display: flex;
     flex-direction: row;
   }
+  .left-container {
+    padding-top: 16px;
+  }
   .right-container {
     width: 50%;
     margin: 0 4%;
