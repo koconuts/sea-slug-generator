@@ -73,6 +73,20 @@ ul {
   color: #26C6DA;
 }
 
+.selector-heading-container {
+  border: solid 1px #BBA8DE;
+  border-radius: 5px;
+  margin-top: 16px;
+  height: 32px;
+}
+
+.selector-heading {
+  text-align: center;
+  color: #BBA8DE;
+  font-size: 1.4rem;
+  margin: 7px auto;
+}
+
 .shape-selector {
   height: 80px;
   margin-top: 16px;
