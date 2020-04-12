@@ -15,6 +15,10 @@ ul {
   list-style: none;
 }
 
+input {
+  display: none;
+}
+
 .header {
   height: 64px;
 }
@@ -58,25 +62,23 @@ ul {
 }
 
 .part-item {
-  flex: 20px;
+  flex: 1;
   height: 32px;
-  border-radius: 5px;
   margin: 4px 2px auto;
 }
 
-.part-item.selected {
-  background-color: #fefefe;
-}
-
-.part-item-name {
+.part-item-label {
   display: block;
+  border-radius: 5px;
+  background-color: #BBA8DE;
+  font-size: 1.4rem;
+  line-height: 32px;
   color: #fefefe;
-  font-size: 1.4em;
-  padding: 5px 0;
 }
 
-.part-item-name.selected {
+input[name="part-item"]:checked + label {
   color: #26C6DA;
+  background-color: #fefefe;
 }
 
 .selector-heading-container {

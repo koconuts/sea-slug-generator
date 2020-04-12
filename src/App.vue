@@ -14,18 +14,38 @@
           <div class="container">
             <ul class="selector part-selector">
               <!-- 選択状態 -->
-              <li class="item part-item selected">
-                <h2 class="text part-item-name selected">からだ</h2>
-              </li>
-              <!-- 未選択状態 -->
               <li class="item part-item">
-                <h2 class="text part-item-name">ぱーつ</h2>
+                <input
+                  id="radio_whole-body"
+                  type="radio"
+                  name="part-item"
+                  checked
+                >
+                <label for="radio_whole-body" class="text part-item-label selected">からだ</label>
               </li>
               <li class="item part-item">
-                <h2 class="text part-item-name">もよう</h2>
+                <input
+                  id="radio_parts"
+                  type="radio"
+                  name="part-item"
+                >
+                <label for="radio_parts" class="text part-item-label">ぱーつ</label>
               </li>
               <li class="item part-item">
-                <h2 class="text part-item-name">背景</h2>
+                <input
+                  id="radio_pattren"
+                  type="radio"
+                  name="part-item"
+                >
+                <label for="radio_pattren" class="text part-item-label">もよう</label>
+              </li>
+              <li class="item part-item">
+                <input
+                  id="radio_back-ground"
+                  type="radio"
+                  name="part-item"
+                >
+                <label for="radio_back-ground" class="text part-item-label">背景</label>
               </li>
             </ul>
           </div>
