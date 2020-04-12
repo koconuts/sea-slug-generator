@@ -29,6 +29,11 @@ ul {
   font-weight: bold;
 }
 
+.body {
+  display: flex;
+  flex-direction: column;
+}
+
 .main-img {
   width: 100%;
 }
@@ -95,6 +100,14 @@ ul {
   .title {
     text-align: left;
     padding-left: 0px;
+  }
+  .body {
+    display: flex;
+    flex-direction: row;
+  }
+  .right-container {
+    width: 50%;
+    margin: 0 4%;
   }
   .main-img {
     max-width: 500px;
