@@ -46,6 +46,24 @@
             </li>
           </ul>
         </div>
+        <div class="container">
+          <ul class="selector color-selector">
+            <!-- 選択状態 -->
+            <li class="item color-item selected"></li>
+            <!-- 未選択状態 -->
+            <li class="item color-item"></li>
+            <li class="item color-item"></li>
+            <li class="item color-item"></li>
+            <li class="item color-item"></li>
+          </ul>
+          <ul class="selector color-selector">
+            <li class="item color-item"></li>
+            <li class="item color-item"></li>
+            <li class="item color-item"></li>
+            <li class="item color-item"></li>
+            <li class="item color-item"></li>
+          </ul>
+        </div>
       </div>
     </div>
   </div>

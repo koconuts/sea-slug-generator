@@ -98,6 +98,26 @@ ul {
   margin: 8px auto;
 }
 
+.color-selector {
+  height: 48px;
+  margin-top: 16px;
+  justify-content: space-evenly;
+}
+
+.color-item {
+  border-radius: 50%;
+  /* TODO: 正しい色にする */
+  background-color: #F09DF9;;
+  margin: 0 4px;
+  height: 100%;
+  width: 48px;
+  box-sizing: border-box;
+}
+
+.color-item.selected {
+  border: solid 3px #26C6DA;
+}
+
 @media (min-width: 960px) {
   html {
     margin: 0 20px;
@@ -116,5 +136,12 @@ ul {
   }
   .main-img {
     max-width: 500px;
+  }
+  .color-selector {
+    height: 64px;
+  }
+  .color-item {
+    width: 64px;
+    margin: 0 16px;
   }
 }
