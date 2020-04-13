@@ -1,7 +1,8 @@
 * {
   margin: 0px;
   padding: 0px;
-
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box
 }
 
 html {
@@ -13,6 +14,10 @@ html {
 
 ul {
   list-style: none;
+}
+
+input {
+  display: none;
 }
 
 .header {
@@ -58,25 +63,23 @@ ul {
 }
 
 .part-item {
-  flex: 20px;
+  flex: 1;
   height: 32px;
-  border-radius: 5px;
   margin: 4px 2px auto;
 }
 
-.part-item.selected {
-  background-color: #fefefe;
-}
-
-.part-item-name {
+.part-item-label {
   display: block;
+  border-radius: 5px;
+  background-color: #BBA8DE;
+  font-size: 1.4rem;
+  line-height: 32px;
   color: #fefefe;
-  font-size: 1.4em;
-  padding: 5px 0;
 }
 
-.part-item-name.selected {
+input[name="part-item"]:checked + label {
   color: #26C6DA;
+  background-color: #fefefe;
 }
 
 .selector-heading-container {
@@ -99,22 +102,25 @@ ul {
 }
 
 .shape-item {
-  border-radius: 6px;
-  background-color: #E3F2FD;
   margin: 0;
-  height: 80px;
   width: 24%;
-  box-sizing: border-box;
 }
 
-.shape-item.selected {
+.shape-item-label {
+  display: block;
+  height: 80px;
+  border-radius: 6px;
+  background-color: #E3F2FD;
+}
+
+input[name="shape-item"]:checked + label {
   border: solid 3px #26C6DA;
 }
 
 .shape-item-img {
   display: block;
-  height: 64px;
-  margin: 8px auto;
+  margin: auto;
+  height: 100%;
 }
 
 .color-selector {
@@ -124,16 +130,19 @@ ul {
 }
 
 .color-item {
+  margin: 0 4px;
+  width: 48px;
+}
+
+.color-item-label {
+  display: block;
   border-radius: 50%;
   /* TODO: 正しい色にする */
   background-color: #F09DF9;
-  margin: 0 4px;
   height: 100%;
-  width: 48px;
-  box-sizing: border-box;
 }
 
-.color-item.selected {
+input[name="color-item"]:checked + label {
   border: solid 3px #26C6DA;
 }
 
