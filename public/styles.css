@@ -1,7 +1,8 @@
 * {
   margin: 0px;
   padding: 0px;
-
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box
 }
 
 html {
@@ -101,22 +102,25 @@ input[name="part-item"]:checked + label {
 }
 
 .shape-item {
-  border-radius: 6px;
-  background-color: #E3F2FD;
   margin: 0;
-  height: 80px;
   width: 24%;
-  box-sizing: border-box;
 }
 
-.shape-item.selected {
+.shape-item-label {
+  display: block;
+  height: 80px;
+  border-radius: 6px;
+  background-color: #E3F2FD;
+}
+
+input[name="shape-item"]:checked + label {
   border: solid 3px #26C6DA;
 }
 
 .shape-item-img {
   display: block;
-  height: 64px;
-  margin: 8px auto;
+  margin: auto;
+  height: 100%;
 }
 
 .color-selector {
@@ -132,7 +136,6 @@ input[name="part-item"]:checked + label {
   margin: 0 4px;
   height: 100%;
   width: 48px;
-  box-sizing: border-box;
 }
 
 .color-item.selected {
