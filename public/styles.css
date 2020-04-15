@@ -47,7 +47,7 @@ input {
 }
 
 .selectors {
-  margin-bottom: 88px;
+  margin-bottom: 136px;
 }
 
 .selector {
@@ -92,7 +92,7 @@ input[name="part-item"]:checked + label {
 .selector-heading {
   color: #BBA8DE;
   font-size: 1.4rem;
-  margin: 7px auto;
+  line-height: 32px;
 }
 
 .shape-selector {
@@ -148,7 +148,7 @@ input[name="color-item"]:checked + label {
 
 .complete-btn {
   position: fixed;
-  bottom: 16px;
+  bottom: 48px;
   background-color: #26C6DA;
   border-radius: 50px;
   height: 48px;
