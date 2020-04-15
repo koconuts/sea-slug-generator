@@ -11,7 +11,7 @@
             :id=item.id
             type="radio"
             name="shape-item"
-            checked
+            :checked=isChecked(key)
           >
           <label :for=item.id class="text shape-item-label">
             <img class="shape-item-img" src="../assets/images/parts/slug-parts_1.png">
@@ -26,7 +26,7 @@
             :id=item.id
             type="radio"
             name="color-item"
-            checked
+            :checked=isChecked(key)
           >
           <label :for=item.id class="text color-item-label"></label>
         </li>
@@ -37,7 +37,6 @@
             :id=item.id
             type="radio"
             name="color-item"
-            checked
           >
           <label :for=item.id class="text color-item-label"></label>
         </li>
@@ -53,6 +52,11 @@
 export default {
   name: 'Parts',
   components: {
+  },
+  methods: {
+    isChecked(key) {
+      return key === 0 ? 'checked' : '';
+    }
   },
   data() {
     return {
