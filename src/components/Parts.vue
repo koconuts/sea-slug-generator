@@ -3,22 +3,7 @@
     <div class="selector-heading-container">
       <h2 class="text selector-heading">頭触手</h2>
     </div>
-    <div class="container">
-      <!-- TODO: コンポーネント化 -->
-      <ul class="selector shape-selector">
-        <li class="item shape-item" v-for="(item, key) in shapeSelectorItems" :key="key">
-          <input
-            :id=item.id
-            type="radio"
-            name="shape-item"
-            :checked=isChecked(key)
-          >
-          <label :for=item.id class="text shape-item-label">
-            <img class="shape-item-img" src="../assets/images/parts/slug-parts_1.png">
-          </label>
-        </li>
-      </ul>
-    </div>
+    <shape-selector></shape-selector>
     <div class="container">
       <ul class="selector color-selector">
         <li class="item color-item" v-for="(item, key) in colorSelectorItems" :key="key">
@@ -49,9 +34,12 @@
 </template>
 
 <script>
+import ShapeSelector from '../components/ShapeSelector.vue';
+
 export default {
   name: 'Parts',
   components: {
+    ShapeSelector,
   },
   methods: {
     isChecked(key) {
@@ -60,12 +48,6 @@ export default {
   },
   data() {
     return {
-      shapeSelectorItems: [
-        {id: 'radio_img1'},
-        {id: 'radio_img2'},
-        {id: 'radio_img3'},
-        {id: 'radio_img4'}
-      ],
       colorSelectorItems: [
         {id: 'radio_color1'},
         {id: 'radio_color2'},
