@@ -113,7 +113,7 @@ input[name="part-item"]:checked + label {
   background-color: #E3F2FD;
 }
 
-input[name="shape-item"]:checked + label {
+input[class="shape-item-input"]:checked + label {
   border: solid 3px #26C6DA;
 }
 
