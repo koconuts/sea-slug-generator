@@ -18,7 +18,7 @@
                   :id=item.id
                   type="radio"
                   name="part-item"
-                  checked
+                  :checked=isChecked(key)
                 >
                 <label :for=item.id class="text part-item-label">{{ item.label }}</label>
               </li>
@@ -50,6 +50,11 @@ export default {
     Parts,
     // Pattern,
     // BackGround
+  },
+  methods: {
+    isChecked(key) {
+      return key === 0 ? 'checked' : '';
+    }
   },
   data() {
     return {
