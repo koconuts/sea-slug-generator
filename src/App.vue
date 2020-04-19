@@ -5,9 +5,7 @@
     </header>
     <div class="body">
       <div class="left-container">
-        <div class="container">
-          <img class="main-img" src="./assets/images/slug_1.png">
-        </div>
+        <main-canvas></main-canvas>
       </div>
       <div class="right-container">
         <div class="selectors">
@@ -40,6 +38,7 @@
 </template>
 
 <script>
+import MainCanvas from './components/MainCanvas.vue'
 import WholeBody from './components/WholeBody.vue'
 import Parts from './components/Parts.vue'
 import Design from './components/Design.vue'
@@ -48,6 +47,7 @@ import BackGround from './components/BackGround.vue'
 export default {
   name: 'App',
   components: {
+    MainCanvas,
     WholeBody,
     Parts,
     Design,
@@ -56,7 +56,7 @@ export default {
   methods: {
     isChecked(key) {
       return key === 0 ? 'checked' : '';
-    }
+    },
   },
   data() {
     return {
