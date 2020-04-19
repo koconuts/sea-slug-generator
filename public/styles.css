@@ -124,14 +124,15 @@ input[name="shape-item"]:checked + label {
 }
 
 .color-selector {
-  height: 48px;
   margin-top: 16px;
-  justify-content: space-evenly;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
 }
 
 .color-item {
-  margin: 0 4px;
+  margin: 4px auto;
   width: 48px;
+  height: 48px;
 }
 
 .color-item-label {
@@ -188,12 +189,9 @@ input[name="color-item"]:checked + label {
   .selectors {
     margin-bottom: 0px;
   }
-  .color-selector {
-    height: 64px;
-  }
   .color-item {
     width: 64px;
-    margin: 0 16px;
+    height: 64px;
   }
   .complete-btn {
     position: static;
