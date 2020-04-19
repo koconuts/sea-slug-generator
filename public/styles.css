@@ -143,7 +143,7 @@ input[class="shape-item-input"]:checked + label {
   height: 100%;
 }
 
-input[name="color-item"]:checked + label {
+input[class="color-item-input"]:checked + label {
   border: solid 3px #26C6DA;
 }
 

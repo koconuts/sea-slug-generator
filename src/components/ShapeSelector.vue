@@ -31,16 +31,6 @@ export default {
       return key === 0 ? 'checked' : '';
     }
   },
-  // data() {
-    // return {
-    //   shapeSelectorItems: [
-    //     {id: 'radio_img1'},
-    //     {id: 'radio_img2'},
-    //     {id: 'radio_img3'},
-    //     {id: 'radio_img4'}
-    //   ],
-    // }
-  // }
 }
 </script>
 
