@@ -125,6 +125,7 @@ input[class="shape-item-input"]:checked + label {
 
 .color-selector {
   margin-top: 16px;
+  margin-bottom: 32px;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
 }

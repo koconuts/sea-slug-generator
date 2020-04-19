@@ -15,19 +15,21 @@
             <ul class="selector part-selector">
               <li class="item part-item" v-for="(item, key) in partsSelectorItems" :key="key">
                 <input
-                  :id=item.id
                   type="radio"
                   name="part-item"
+                  :value=item.id
+                  :id=item.id
                   :checked=isChecked(key)
+                  v-model="picked"
                 >
                 <label :for=item.id class="text part-item-label">{{ item.label }}</label>
               </li>
             </ul>
           </div>
-          <whole-body></whole-body>
-          <parts></parts>
-          <!-- <pattern></pattern>
-          <back-ground></back-ground> -->
+          <whole-body v-show="picked === 'radio_whole-body'"></whole-body>
+          <parts v-show="picked === 'radio_parts'">></parts>
+          <design v-show="picked === 'radio_design'"></design>
+          <back-ground v-show="picked === 'radio_back-ground'">></back-ground>
         </div>
         <div class="complete-btn">
           <p class="text complete-btn-text">かんせい</p>
@@ -40,16 +42,16 @@
 <script>
 import WholeBody from './components/WholeBody.vue'
 import Parts from './components/Parts.vue'
-// import Pattern from './components/Pattern.vue'
-// import BackGround from './components/BackGround.vue'
+import Design from './components/Design.vue'
+import BackGround from './components/BackGround.vue'
 
 export default {
   name: 'App',
   components: {
     WholeBody,
     Parts,
-    // Pattern,
-    // BackGround
+    Design,
+    BackGround
   },
   methods: {
     isChecked(key) {
@@ -58,10 +60,11 @@ export default {
   },
   data() {
     return {
+      picked: 'radio_whole-body',
       partsSelectorItems: [
         {id: 'radio_whole-body', label: 'からだ'},
         {id: 'radio_parts', label: 'ぱーつ'},
-        {id: 'radio_pattern', label: 'もよう'},
+        {id: 'radio_design', label: 'もよう'},
         {id: 'radio_back-ground', label: '背景'}
       ]
     }

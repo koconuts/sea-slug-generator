@@ -42,40 +42,40 @@ export default {
       toushokushuColor: 'toushokushuColor',
       nijihaiColor: 'nijihaiColor',
       shapeSelectorItemsToushokushu: [
-        {id: 'radio_img1'},
-        {id: 'radio_img2'},
-        {id: 'radio_img3'},
-        {id: 'radio_img4'}
+        {id: 'radio_img_toushokushu1'},
+        {id: 'radio_img_toushokushu2'},
+        {id: 'radio_img_toushokushu3'},
+        {id: 'radio_img_toushokushu4'}
       ],
       shapeSelectorItemsNijihai: [
-        {id: 'radio_img5'},
-        {id: 'radio_img6'},
-        {id: 'radio_img7'},
-        {id: 'radio_img8'}
+        {id: 'radio_img_nijihai5'},
+        {id: 'radio_img_nijihai6'},
+        {id: 'radio_img_nijihai7'},
+        {id: 'radio_img_nijihai8'}
       ],
       colorSelectorItemsToushokushu: [
-        {id: 'radio_color1'},
-        {id: 'radio_color2'},
-        {id: 'radio_color3'},
-        {id: 'radio_color4'},
-        {id: 'radio_color5'},
-        {id: 'radio_color6'},
-        {id: 'radio_color7'},
-        {id: 'radio_color8'},
-        {id: 'radio_color9'},
-        {id: 'radio_color10'}
+        {id: 'radio_color_toushokushu1'},
+        {id: 'radio_color_toushokushu2'},
+        {id: 'radio_color_toushokushu3'},
+        {id: 'radio_color_toushokushu4'},
+        {id: 'radio_color_toushokushu5'},
+        {id: 'radio_color_toushokushu6'},
+        {id: 'radio_color_toushokushu7'},
+        {id: 'radio_color_toushokushu8'},
+        {id: 'radio_color_toushokushu9'},
+        {id: 'radio_color_toushokushu10'}
       ],
       colorSelectorItemsNijihai: [
-        {id: 'radio_color1'},
-        {id: 'radio_color2'},
-        {id: 'radio_color3'},
-        {id: 'radio_color4'},
-        {id: 'radio_color5'},
-        {id: 'radio_color6'},
-        {id: 'radio_color7'},
-        {id: 'radio_color8'},
-        {id: 'radio_color9'},
-        {id: 'radio_color10'}
+        {id: 'radio_color_nijihai1'},
+        {id: 'radio_color_nijihai2'},
+        {id: 'radio_color_nijihai3'},
+        {id: 'radio_color_nijihai4'},
+        {id: 'radio_color_nijihai5'},
+        {id: 'radio_color_nijihai6'},
+        {id: 'radio_color_nijihai7'},
+        {id: 'radio_color_nijihai8'},
+        {id: 'radio_color_nijihai9'},
+        {id: 'radio_color_nijihai10'}
       ],
     }
   }
