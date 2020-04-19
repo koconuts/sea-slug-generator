@@ -9,7 +9,11 @@
           :name="name"
           :checked=isChecked(key)
         >
-        <label :for=item.id class="text color-item-label"></label>
+        <label
+          class="text color-item-label"
+          :for=item.id
+          :style="item.color"
+        ></label>
       </li>
     </ul>
   </div>

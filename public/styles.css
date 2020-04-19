@@ -139,8 +139,6 @@ input[class="shape-item-input"]:checked + label {
 .color-item-label {
   display: block;
   border-radius: 50%;
-  /* TODO: 正しい色にする */
-  background-color: #F09DF9;
   height: 100%;
 }
 
