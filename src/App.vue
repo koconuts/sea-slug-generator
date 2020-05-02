@@ -117,14 +117,14 @@ export default {
       shape: [
         'shape_toushokushu1',
         'shape_nijiera1',
-        'shape_surface1',
+        'shape_surface3',
       ],
       color: [
-        'radio_color_body1',
-        'radio_color_toushokushu1',
-        'radio_color_nijiera1',
-        'radio_color_surface1',
-        'radio_color_side1',
+        'radio_color_body9',
+        'radio_color_toushokushu5',
+        'radio_color_nijiera5',
+        'radio_color_surface4',
+        'radio_color_side4',
         'radio_color_bg1'
       ]
     }
