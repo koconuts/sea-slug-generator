@@ -3,78 +3,79 @@
     <div class="selector-heading-container">
       <h2 class="text selector-heading">頭触手</h2>
     </div>
-    <div class="container">
-      <!-- TODO: コンポーネント化 -->
-      <ul class="selector shape-selector">
-        <li class="item shape-item" v-for="(item, key) in shapeSelectorItems" :key="key">
-          <input
-            :id=item.id
-            type="radio"
-            name="shape-item"
-            checked
-          >
-          <label :for=item.id class="text shape-item-label">
-            <img class="shape-item-img" src="../assets/images/parts/slug-parts_1.png">
-          </label>
-        </li>
-      </ul>
-    </div>
-    <div class="container">
-      <ul class="selector color-selector">
-        <li class="item color-item" v-for="(item, key) in colorSelectorItems" :key="key">
-          <input
-            :id=item.id
-            type="radio"
-            name="color-item"
-            checked
-          >
-          <label :for=item.id class="text color-item-label"></label>
-        </li>
-      </ul>
-      <ul class="selector color-selector">
-        <li class="item color-item" v-for="(item, key) in colorSelectorItems2" :key="key">
-          <input
-            :id=item.id
-            type="radio"
-            name="color-item"
-            checked
-          >
-          <label :for=item.id class="text color-item-label"></label>
-        </li>
-      </ul>
-    </div>
-    <!-- <div class="selector-heading-container">
+    <shape-selector
+      :shapeSelectorItems="shapeSelectorItemsToushokushu"
+      :name="toushokushu"
+    ></shape-selector>
+    <color-selector
+      :colorSelectorItems="colorSelectorItemsToushokushu"
+      :name="toushokushuColor"
+    ></color-selector>
+    <div class="selector-heading-container">
       <h2 class="text selector-heading">二次鰓</h2>
-    </div> -->
+    </div>
+    <shape-selector
+      :shapeSelectorItems="shapeSelectorItemsNijiera"
+      :name="nijiera"
+    ></shape-selector>
+    <color-selector
+      :colorSelectorItems="colorSelectorItemsNijiera"
+      :name="nijieraColor"
+    ></color-selector>
   </div>
 </template>
 
 <script>
+import ShapeSelector from '../components/ShapeSelector.vue';
+import ColorSelector from '../components/ColorSelector.vue';
+
 export default {
   name: 'Parts',
   components: {
+    ShapeSelector,
+    ColorSelector,
   },
   data() {
     return {
-      shapeSelectorItems: [
-        {id: 'radio_img1'},
-        {id: 'radio_img2'},
-        {id: 'radio_img3'},
-        {id: 'radio_img4'}
+      toushokushu: 'toushokushu',
+      nijiera: 'nijiera',
+      toushokushuColor: 'toushokushuColor',
+      nijieraColor: 'nijieraColor',
+      shapeSelectorItemsToushokushu: [
+        {id: 'radio_img_toushokushu1'},
+        {id: 'radio_img_toushokushu2'},
+        {id: 'radio_img_toushokushu3'},
+        {id: 'radio_img_toushokushu4'}
       ],
-      colorSelectorItems: [
-        {id: 'radio_color1'},
-        {id: 'radio_color2'},
-        {id: 'radio_color3'},
-        {id: 'radio_color4'},
-        {id: 'radio_color5'}
+      shapeSelectorItemsNijiera: [
+        {id: 'radio_img_nijiera5'},
+        {id: 'radio_img_nijiera6'},
+        {id: 'radio_img_nijiera7'},
+        {id: 'radio_img_nijiera8'}
       ],
-      colorSelectorItems2: [
-        {id: 'radio_color6'},
-        {id: 'radio_color7'},
-        {id: 'radio_color8'},
-        {id: 'radio_color9'},
-        {id: 'radio_color10'}
+      colorSelectorItemsToushokushu: [
+        {id: 'radio_color_toushokushu1', color: {backgroundColor: '#A3A3A3'}},
+        {id: 'radio_color_toushokushu2', color: {backgroundColor: '#FFFFFF', boxShadow: '0px 0px 1px inset'}},
+        {id: 'radio_color_toushokushu3', color: {backgroundColor: '#F09DF9'}},
+        {id: 'radio_color_toushokushu4', color: {backgroundColor: '#F6CD9F'}},
+        {id: 'radio_color_toushokushu5', color: {backgroundColor: '#FFFEA5'}},
+        {id: 'radio_color_toushokushu6', color: {backgroundColor: '#B1FCA3'}},
+        {id: 'radio_color_toushokushu7', color: {backgroundColor: '#B0FCFD'}},
+        {id: 'radio_color_toushokushu8', color: {backgroundColor: '#A3CAFA'}},
+        {id: 'radio_color_toushokushu9', color: {backgroundColor: '#9998F8'}},
+        {id: 'radio_color_toushokushu10', color: {backgroundColor: '#C49BF8'}},
+      ],
+      colorSelectorItemsNijiera: [
+        {id: 'radio_color_nijiera1', color: {backgroundColor: '#A3A3A3'}},
+        {id: 'radio_color_nijiera2', color: {backgroundColor: '#FFFFFF', boxShadow: '0px 0px 1px inset'}},
+        {id: 'radio_color_nijiera3', color: {backgroundColor: '#F09DF9'}},
+        {id: 'radio_color_nijiera4', color: {backgroundColor: '#F6CD9F'}},
+        {id: 'radio_color_nijiera5', color: {backgroundColor: '#FFFEA5'}},
+        {id: 'radio_color_nijiera6', color: {backgroundColor: '#B1FCA3'}},
+        {id: 'radio_color_nijiera7', color: {backgroundColor: '#B0FCFD'}},
+        {id: 'radio_color_nijiera8', color: {backgroundColor: '#A3CAFA'}},
+        {id: 'radio_color_nijiera9', color: {backgroundColor: '#9998F8'}},
+        {id: 'radio_color_nijiera10', color: {backgroundColor: '#C49BF8'}},
       ],
     }
   }

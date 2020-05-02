@@ -47,7 +47,7 @@ input {
 }
 
 .selectors {
-  margin-bottom: 88px;
+  margin-bottom: 136px;
 }
 
 .selector {
@@ -92,7 +92,7 @@ input[name="part-item"]:checked + label {
 .selector-heading {
   color: #BBA8DE;
   font-size: 1.4rem;
-  margin: 7px auto;
+  line-height: 32px;
 }
 
 .shape-selector {
@@ -113,7 +113,7 @@ input[name="part-item"]:checked + label {
   background-color: #E3F2FD;
 }
 
-input[name="shape-item"]:checked + label {
+input[class="shape-item-input"]:checked + label {
   border: solid 3px #26C6DA;
 }
 
@@ -124,36 +124,37 @@ input[name="shape-item"]:checked + label {
 }
 
 .color-selector {
-  height: 48px;
   margin-top: 16px;
-  justify-content: space-evenly;
+  margin-bottom: 32px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
 }
 
 .color-item {
-  margin: 0 4px;
+  margin: 4px auto;
   width: 48px;
+  height: 48px;
 }
 
 .color-item-label {
   display: block;
   border-radius: 50%;
-  /* TODO: 正しい色にする */
-  background-color: #F09DF9;
   height: 100%;
 }
 
-input[name="color-item"]:checked + label {
+input[class="color-item-input"]:checked + label {
   border: solid 3px #26C6DA;
 }
 
 .complete-btn {
   position: fixed;
-  bottom: 16px;
+  bottom: 48px;
   background-color: #26C6DA;
   border-radius: 50px;
   height: 48px;
   width: calc(100% - 32px);
   margin-top: 24px;
+  box-shadow: 0px 5px 15px rgba(0,0,0,0.25);
 }
 
 .complete-btn-text {
@@ -182,21 +183,19 @@ input[name="color-item"]:checked + label {
     margin: 0 4%;
   }
   .main-img {
-    max-width: 500px;
+    width: 500px;
   }
   .selectors {
     margin-bottom: 0px;
   }
-  .color-selector {
-    height: 64px;
-  }
   .color-item {
     width: 64px;
-    margin: 0 16px;
+    height: 64px;
   }
   .complete-btn {
     position: static;
     width: 100%;
     margin-bottom: 24px;
+    box-shadow: none;
   }
 }
