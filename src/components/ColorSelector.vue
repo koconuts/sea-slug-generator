@@ -13,6 +13,7 @@
           class="text color-item-label"
           :for=item.id
           :style="item.color"
+          @click="$emit('color', item.id)"
         ></label>
       </li>
     </ul>

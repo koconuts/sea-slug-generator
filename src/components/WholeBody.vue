@@ -3,6 +3,7 @@
     <color-selector
       :colorSelectorItems="colorSelectorItemsBody"
       :name="bodyColor"
+      @color="$listeners['body-color']"
     ></color-selector>
   </div>
 </template>

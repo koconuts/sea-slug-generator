@@ -10,6 +10,7 @@
     <color-selector
       :colorSelectorItems="colorSelectorItemsSurface"
       :name="surfaceColor"
+      @color="$listeners['surface-color']"
     ></color-selector>
     <div class="selector-heading-container">
       <h2 class="text selector-heading">ふち</h2>
@@ -17,6 +18,7 @@
     <color-selector
       :colorSelectorItems="colorSelectorItemsSide"
       :name="sideColor"
+      @color="$listeners['side-color']"
     ></color-selector>
   </div>
 </template>

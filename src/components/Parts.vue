@@ -10,6 +10,7 @@
     <color-selector
       :colorSelectorItems="colorSelectorItemsToushokushu"
       :name="toushokushuColor"
+      @color="$listeners['toushokushu-color']"
     ></color-selector>
     <div class="selector-heading-container">
       <h2 class="text selector-heading">二次鰓</h2>
@@ -21,6 +22,7 @@
     <color-selector
       :colorSelectorItems="colorSelectorItemsNijiera"
       :name="nijieraColor"
+      @color="$listeners['nijiera-color']"
     ></color-selector>
   </div>
 </template>

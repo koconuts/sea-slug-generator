@@ -3,6 +3,7 @@
     <color-selector
       :colorSelectorItems="colorSelectorItemsBack"
       :name="backColor"
+      @color="$listeners['bg-color']"
     ></color-selector>
   </div>
 </template>
