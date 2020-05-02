@@ -9,7 +9,11 @@
           :name="name"
           :checked=isChecked(key)
         >
-        <label :for=item.id class="text shape-item-label">
+        <label
+          :for=item.id
+          @click="$emit('shape', item.id)"
+          class="text shape-item-label"
+        >
           <img class="shape-item-img" src="../assets/images/parts/slug-parts_1.png">
         </label>
       </li>

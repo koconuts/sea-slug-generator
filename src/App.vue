@@ -6,6 +6,7 @@
     <div class="body">
       <div class="left-container">
         <main-canvas
+          :shape="shape"
           :color="color"
         ></main-canvas>
       </div>
@@ -32,11 +33,14 @@
           ></whole-body>
           <parts
             v-show="picked === 'radio_parts'"
+            @toushokushu-shape="getToushokushuShape"
             @toushokushu-color="getToushokushuColor"
             @nijiera-color="getNijieraColor"
+            @nijiera-shape="getNijieraShape"
           ></parts>
           <design
             v-show="picked === 'radio_design'"
+            @surface-shape="getSurfaceShape"
             @surface-color="getSurfaceColor"
             @side-color="getSideColor"
           ></design>
@@ -73,6 +77,15 @@ export default {
     isChecked(key) {
       return key === 0 ? 'checked' : '';
     },
+    getToushokushuShape(id) {
+      this.$set(this.shape, 0, id);
+    },
+    getNijieraShape(id) {
+      this.$set(this.shape, 1, id);
+    },
+    getSurfaceShape(id) {
+      this.$set(this.shape, 2, id);
+    },
     getBodyColor(id) {
       this.$set(this.color, 0, id);
     },
@@ -100,6 +113,11 @@ export default {
         {id: 'radio_parts', label: 'ぱーつ'},
         {id: 'radio_design', label: 'もよう'},
         {id: 'radio_back-ground', label: '背景'}
+      ],
+      shape: [
+        'shape_toushokushu1',
+        'shape_nijiera1',
+        'shape_surface1',
       ],
       color: [
         'radio_color_body1',
