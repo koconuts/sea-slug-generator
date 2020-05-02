@@ -6,10 +6,12 @@
     <shape-selector
       :shapeSelectorItems="shapeSelectorItemsSurface"
       :name="surface"
+      @shape="$listeners['surface-shape']"
     ></shape-selector>
     <color-selector
       :colorSelectorItems="colorSelectorItemsSurface"
       :name="surfaceColor"
+      @color="$listeners['surface-color']"
     ></color-selector>
     <div class="selector-heading-container">
       <h2 class="text selector-heading">ふち</h2>
@@ -17,6 +19,7 @@
     <color-selector
       :colorSelectorItems="colorSelectorItemsSide"
       :name="sideColor"
+      @color="$listeners['side-color']"
     ></color-selector>
   </div>
 </template>
@@ -37,10 +40,10 @@ export default {
       surfaceColor: 'surfaceColor',
       sideColor: 'sideColor',
       shapeSelectorItemsSurface: [
-        {id: 'radio_img_surface1'},
-        {id: 'radio_img_surface2'},
-        {id: 'radio_img_surface3'},
-        {id: 'radio_img_surface4'}
+        {id: 'shape_surface1'},
+        {id: 'shape_surface2'},
+        {id: 'shape_surface3'},
+        {id: 'shape_surface4'}
       ],
       colorSelectorItemsSurface: [
         {id: 'radio_color_surface1', color: {backgroundColor: '#A3A3A3'}},

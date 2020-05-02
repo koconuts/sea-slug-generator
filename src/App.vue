@@ -5,7 +5,10 @@
     </header>
     <div class="body">
       <div class="left-container">
-        <main-canvas></main-canvas>
+        <main-canvas
+          :shape="shape"
+          :color="color"
+        ></main-canvas>
       </div>
       <div class="right-container">
         <div class="selectors">
@@ -24,10 +27,27 @@
               </li>
             </ul>
           </div>
-          <whole-body v-show="picked === 'radio_whole-body'"></whole-body>
-          <parts v-show="picked === 'radio_parts'">></parts>
-          <design v-show="picked === 'radio_design'"></design>
-          <back-ground v-show="picked === 'radio_back-ground'">></back-ground>
+          <whole-body
+            v-show="picked === 'radio_whole-body'"
+            @body-color="getBodyColor"
+          ></whole-body>
+          <parts
+            v-show="picked === 'radio_parts'"
+            @toushokushu-shape="getToushokushuShape"
+            @toushokushu-color="getToushokushuColor"
+            @nijiera-color="getNijieraColor"
+            @nijiera-shape="getNijieraShape"
+          ></parts>
+          <design
+            v-show="picked === 'radio_design'"
+            @surface-shape="getSurfaceShape"
+            @surface-color="getSurfaceColor"
+            @side-color="getSideColor"
+          ></design>
+          <back-ground
+            v-show="picked === 'radio_back-ground'"
+            @bg-color="getBgColor"
+          ></back-ground>
         </div>
         <div class="complete-btn">
           <p class="text complete-btn-text">かんせい</p>
@@ -57,6 +77,33 @@ export default {
     isChecked(key) {
       return key === 0 ? 'checked' : '';
     },
+    getToushokushuShape(id) {
+      this.$set(this.shape, 0, id);
+    },
+    getNijieraShape(id) {
+      this.$set(this.shape, 1, id);
+    },
+    getSurfaceShape(id) {
+      this.$set(this.shape, 2, id);
+    },
+    getBodyColor(id) {
+      this.$set(this.color, 0, id);
+    },
+    getToushokushuColor(id) {
+      this.$set(this.color, 1, id);
+    },
+    getNijieraColor(id) {
+      this.$set(this.color, 2, id);
+    },
+    getSurfaceColor(id) {
+      this.$set(this.color, 3, id);
+    },
+    getSideColor(id) {
+      this.$set(this.color, 4, id);
+    },
+    getBgColor(id) {
+      this.$set(this.color, 5, id);
+    },
   },
   data() {
     return {
@@ -66,6 +113,19 @@ export default {
         {id: 'radio_parts', label: 'ぱーつ'},
         {id: 'radio_design', label: 'もよう'},
         {id: 'radio_back-ground', label: '背景'}
+      ],
+      shape: [
+        'shape_toushokushu1',
+        'shape_nijiera1',
+        'shape_surface3',
+      ],
+      color: [
+        'radio_color_body9',
+        'radio_color_toushokushu5',
+        'radio_color_nijiera5',
+        'radio_color_surface4',
+        'radio_color_side4',
+        'radio_color_bg1'
       ]
     }
   }

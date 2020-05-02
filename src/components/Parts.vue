@@ -6,10 +6,12 @@
     <shape-selector
       :shapeSelectorItems="shapeSelectorItemsToushokushu"
       :name="toushokushu"
+      @shape="$listeners['toushokushu-shape']"
     ></shape-selector>
     <color-selector
       :colorSelectorItems="colorSelectorItemsToushokushu"
       :name="toushokushuColor"
+      @color="$listeners['toushokushu-color']"
     ></color-selector>
     <div class="selector-heading-container">
       <h2 class="text selector-heading">二次鰓</h2>
@@ -17,10 +19,12 @@
     <shape-selector
       :shapeSelectorItems="shapeSelectorItemsNijiera"
       :name="nijiera"
+      @shape="$listeners['nijiera-shape']"
     ></shape-selector>
     <color-selector
       :colorSelectorItems="colorSelectorItemsNijiera"
       :name="nijieraColor"
+      @color="$listeners['nijiera-color']"
     ></color-selector>
   </div>
 </template>
@@ -42,16 +46,16 @@ export default {
       toushokushuColor: 'toushokushuColor',
       nijieraColor: 'nijieraColor',
       shapeSelectorItemsToushokushu: [
-        {id: 'radio_img_toushokushu1'},
-        {id: 'radio_img_toushokushu2'},
-        {id: 'radio_img_toushokushu3'},
-        {id: 'radio_img_toushokushu4'}
+        {id: 'shape_toushokushu1'},
+        {id: 'shape_toushokushu2'},
+        {id: 'shape_toushokushu3'},
+        {id: 'shape_toushokushu4'}
       ],
       shapeSelectorItemsNijiera: [
-        {id: 'radio_img_nijiera5'},
-        {id: 'radio_img_nijiera6'},
-        {id: 'radio_img_nijiera7'},
-        {id: 'radio_img_nijiera8'}
+        {id: 'shape_nijiera1'},
+        {id: 'shape_nijiera2'},
+        {id: 'shape_nijiera3'},
+        {id: 'shape_nijiera4'}
       ],
       colorSelectorItemsToushokushu: [
         {id: 'radio_color_toushokushu1', color: {backgroundColor: '#A3A3A3'}},
