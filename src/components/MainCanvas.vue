@@ -21,9 +21,9 @@ export default {
       const srcs = [
         `${baseUrl}bg_${color[5].replace('radio_color_bg', '')}.png`,
         `${baseUrl}body_${color[0].replace('radio_color_body', '')}.png`,
-        `${baseUrl}toushokushu_${shape[0].replace('shape_toushokushu', '')}_${color[1].replace('radio_color_toushokushu', '')}.png`,
         `${baseUrl}nijiera_${shape[1].replace('shape_nijiera', '')}_${color[2].replace('radio_color_nijiera', '')}.png`,
         `${baseUrl}pattern_${shape[2].replace('shape_surface', '')}_${color[3].replace('radio_color_surface', '')}.png`,
+        `${baseUrl}toushokushu_${shape[0].replace('shape_toushokushu', '')}_${color[1].replace('radio_color_toushokushu', '')}.png`,
         `${baseUrl}side_${color[4].replace('radio_color_side', '')}.png`,
       ];
 
