@@ -14,7 +14,7 @@
           @click="$emit('shape', item.id)"
           class="text shape-item-label"
         >
-          <img class="shape-item-img" src="../assets/images/parts/slug-parts_1.png">
+          <img class="shape-item-img" :src="getSrc(item.fileName)">
         </label>
       </li>
     </ul>
@@ -33,6 +33,9 @@ export default {
   methods: {
     isChecked(key) {
       return key === 0 ? 'checked' : '';
+    },
+    getSrc(fileName) {
+      return `https://sea-slug-generator.s3-ap-northeast-1.amazonaws.com/img/${fileName}.png`;
     }
   },
 }

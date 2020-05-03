@@ -46,16 +46,16 @@ export default {
       toushokushuColor: 'toushokushuColor',
       nijieraColor: 'nijieraColor',
       shapeSelectorItemsToushokushu: [
-        {id: 'shape_toushokushu1'},
-        {id: 'shape_toushokushu2'},
-        {id: 'shape_toushokushu3'},
-        {id: 'shape_toushokushu4'}
+        {id: 'shape_toushokushu1', fileName: 'shape_toushokushu_1'},
+        {id: 'shape_toushokushu2', fileName: 'shape_toushokushu_2'},
+        {id: 'shape_toushokushu3', fileName: 'shape_toushokushu_3'},
+        {id: 'shape_toushokushu4', fileName: 'shape_toushokushu_4'}
       ],
       shapeSelectorItemsNijiera: [
-        {id: 'shape_nijiera1'},
-        {id: 'shape_nijiera2'},
-        {id: 'shape_nijiera3'},
-        {id: 'shape_nijiera4'}
+        {id: 'shape_nijiera1', fileName: 'shape_nijiera_1'},
+        {id: 'shape_nijiera2', fileName: 'shape_nijiera_2'},
+        {id: 'shape_nijiera3', fileName: 'shape_nijiera_3'},
+        {id: 'shape_nijiera4', fileName: 'shape_nijiera_4'}
       ],
       colorSelectorItemsToushokushu: [
         {id: 'radio_color_toushokushu1', color: {backgroundColor: '#A3A3A3'}},

@@ -40,10 +40,10 @@ export default {
       surfaceColor: 'surfaceColor',
       sideColor: 'sideColor',
       shapeSelectorItemsSurface: [
-        {id: 'shape_surface1'},
-        {id: 'shape_surface2'},
-        {id: 'shape_surface3'},
-        {id: 'shape_surface4'}
+        {id: 'shape_surface1', fileName: 'shape_surface_1'},
+        {id: 'shape_surface2', fileName: 'shape_surface_2'},
+        {id: 'shape_surface3', fileName: 'shape_surface_3'},
+        {id: 'shape_surface4', fileName: 'shape_surface_4'}
       ],
       colorSelectorItemsSurface: [
         {id: 'radio_color_surface1', color: {backgroundColor: '#A3A3A3'}},
