@@ -20,7 +20,7 @@ export default {
     return {
       backColor: 'backColor',
       colorSelectorItemsBack: [
-        {id: 'radio_color_bg1', color: {backgroundColor: '#ffbcbc'}},
+        {id: 'radio_color_bg1', color: {backgroundColor: '#13125D'}},
         {id: 'radio_color_bg2', color: {backgroundColor: '#FEFEFE', boxShadow: '0px 0px 1px inset'}},
       ],
     }

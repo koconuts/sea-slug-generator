@@ -54,6 +54,15 @@
         </div>
       </div>
     </div>
+    <!-- <div class="overlay">
+      <div class="modal">
+        <a download="umiushi.png" class="done-image">
+          <img>
+        </a>
+        <p>長押しすると画像の保存ができます</p>
+        <div class="btns"></div>
+      </div>
+    </div> -->
   </div>
 </template>
 
