@@ -47,7 +47,7 @@ export default {
       let count = 0;
       for (var index = 0; index < srcs.length; index++) {
         imgs[index] = new Image();
-        imgs[index].crossOrigin = "Anonymous";//koko
+        imgs[index].crossOrigin = "";
         imgs[index].src = srcs[index];
         imgs[index].onload = () => {
           count++;
