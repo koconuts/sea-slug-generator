@@ -48,7 +48,7 @@ export default {
         const link = document.createElement("a");
         const href = canvas.toDataURL("image/png");
         link.href = href;
-        link.download = "test.png";
+        link.download = "umiushi.png";
         link.click();
       }
     },

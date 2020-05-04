@@ -24,6 +24,11 @@ input {
   height: 64px;
 }
 
+.text {
+  text-align: center;
+  color: #888;
+}
+
 .title {
   color: #9473DE;
   /* font-family: "Nico Moji"; */
@@ -36,10 +41,6 @@ input {
 .body {
   display: flex;
   flex-direction: column;
-}
-
-.text {
-  text-align: center;
 }
 
 .main-img {
@@ -148,7 +149,7 @@ input[class="color-item-input"]:checked + label {
 
 .complete-btn {
   position: fixed;
-  bottom: 48px;
+  bottom: 64px;
   background-color: #9473DE;
   border-radius: 50px;
   height: 48px;
@@ -161,6 +162,15 @@ input[class="color-item-input"]:checked + label {
   color: #fefefe;
   font-size: 1.8rem;
   line-height: 48px;
+}
+
+.right {
+  margin-top: 16px;
+  margin-bottom: 16px;
+}
+
+.pc-right {
+  display: none;
 }
 
 @media (min-width: 960px) {
@@ -197,5 +207,11 @@ input[class="color-item-input"]:checked + label {
     width: 100%;
     margin-bottom: 24px;
     box-shadow: none;
+  }
+  .right {
+    display: none;
+  }
+  .pc-right {
+    display: inline;
   }
 }
