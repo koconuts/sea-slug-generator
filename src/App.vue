@@ -50,19 +50,10 @@
           ></back-ground>
         </div>
         <div class="complete-btn">
-          <p class="text complete-btn-text">かんせい</p>
+          <p id="complete" class="text complete-btn-text">ダウンロード</p>
         </div>
       </div>
     </div>
-    <!-- <div class="overlay">
-      <div class="modal">
-        <a download="umiushi.png" class="done-image">
-          <img>
-        </a>
-        <p>長押しすると画像の保存ができます</p>
-        <div class="btns"></div>
-      </div>
-    </div> -->
   </div>
 </template>
 
@@ -113,6 +104,9 @@ export default {
     getBgColor(id) {
       this.$set(this.color, 5, id);
     },
+    getImgUrl(url) {
+      this.imgUrl = url
+    },
   },
   data() {
     return {
@@ -135,7 +129,8 @@ export default {
         'radio_color_surface4',
         'radio_color_side4',
         'radio_color_bg1'
-      ]
+      ],
+      imgUrl: '',
     }
   }
 }
