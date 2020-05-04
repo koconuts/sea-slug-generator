@@ -164,7 +164,7 @@ input[class="color-item-input"]:checked + label {
 }
 
 /* modal */
-/* .overlay {
+.overlay {
   z-index:1;
   position:fixed;
   top:0;
@@ -182,7 +182,7 @@ input[class="color-item-input"]:checked + label {
   width:50%;
   padding: 1em;
   background:#fff;
-} */
+}
 
 @media (min-width: 960px) {
   html {

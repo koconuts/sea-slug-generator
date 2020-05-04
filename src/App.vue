@@ -8,6 +8,7 @@
         <main-canvas
           :shape="shape"
           :color="color"
+          @img-url="getImgUrl"
         ></main-canvas>
       </div>
       <div class="right-container">
@@ -50,19 +51,19 @@
           ></back-ground>
         </div>
         <div class="complete-btn">
-          <p class="text complete-btn-text">かんせい</p>
+          <p id="complete" class="text complete-btn-text">かんせい</p>
         </div>
       </div>
     </div>
-    <!-- <div class="overlay">
+    <div class="overlay">
       <div class="modal">
-        <a download="umiushi.png" class="done-image">
-          <img>
-        </a>
+        <button @click="$emit('close')">close</button>
+        <img :src="imgUrl" style="width:100%;">
         <p>長押しすると画像の保存ができます</p>
+        <button id="download">ダウンロード</button>
         <div class="btns"></div>
       </div>
-    </div> -->
+    </div>
   </div>
 </template>
 
@@ -113,6 +114,9 @@ export default {
     getBgColor(id) {
       this.$set(this.color, 5, id);
     },
+    getImgUrl(url) {
+      this.imgUrl = url
+    }
   },
   data() {
     return {
@@ -135,7 +139,8 @@ export default {
         'radio_color_surface4',
         'radio_color_side4',
         'radio_color_bg1'
-      ]
+      ],
+      imgUrl: '',
     }
   }
 }
