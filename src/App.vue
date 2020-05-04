@@ -1,7 +1,9 @@
 <template>
   <div>
     <header class="header">
-      <h1 class="text title">うみうしジェネレータ</h1>
+      <p class="title">
+        <img src="../src/assets/images/title.png">
+      </p>
     </header>
     <div class="body">
       <div class="left-container">
