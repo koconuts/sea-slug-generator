@@ -1,7 +1,9 @@
 <template>
   <div>
     <header class="header">
-      <h1 class="text title">うみうしジェネレータ</h1>
+      <p class="title">
+        <img src="../src/assets/images/title.png">
+      </p>
     </header>
     <div class="body">
       <div class="left-container">
@@ -9,6 +11,7 @@
           :shape="shape"
           :color="color"
         ></main-canvas>
+        <p class="text pc-right">© 2020 @avocadoneko</p>
       </div>
       <div class="right-container">
         <div class="selectors">
@@ -48,10 +51,13 @@
             v-show="picked === 'radio_back-ground'"
             @bg-color="getBgColor"
           ></back-ground>
+          <p class="text">※iPhone(Safari)の場合は、ダウンロードボタンをタップした後、</p>
+          <p class="text">表示をタップし、表示された画像を長押ししてください。</p>
         </div>
-        <div class="complete-btn">
-          <p id="complete" class="text complete-btn-text">ダウンロード</p>
+        <div id="complete" class="complete-btn">
+          <p class="text complete-btn-text">ダウンロード</p>
         </div>
+        <p class="text right">© 2020 @avocadoneko</p>
       </div>
     </div>
   </div>
