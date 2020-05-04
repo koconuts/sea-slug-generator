@@ -115,6 +115,35 @@ input[name="part-item"]:checked + label {
   background-color: #fefefe;
 }
 
+/* modal */
+.overlay {
+  z-index:1;
+  position:fixed;
+  top:0;
+  left:0;
+  width:100%;
+  height:100%;
+  background-color:rgba(0,0,0,0.8);
+  display: flex;
+  justify-content: center;
+}
+.modal {
+  z-index:2;
+  width:100%;
+  margin: 24px 16px;
+}
+.complete-img {
+  width: 100%;
+}
+.close-btn {
+  width: 100%;
+  text-align: right;
+  margin-bottom: 16px;
+}
+.close-btn i {
+  color: #fefefe;
+}
+
 input[class="shape-item-input"]:checked + label {
   border: solid 3px #9473DE;
 }
@@ -148,26 +177,45 @@ input[class="color-item-input"]:checked + label {
   border: solid 3px #9473DE;
 }
 
-.complete-btn {
-  position: fixed;
-  bottom: 64px;
+.btn {
+  /* position: fixed; */
   background-color: #9473DE;
   border-radius: 50px;
   height: 48px;
-  width: calc(100% - 32px);
-  margin-top: 24px;
-  box-shadow: 0px 5px 15px rgba(0,0,0,0.25);
+  width: 100%;
 }
 
-.complete-btn-text {
+.complete-btn {
+  position: fixed;
+  bottom: 64px;
+  margin-top: 24px;
+  box-shadow: 0px 5px 15px rgba(0,0,0,0.25);
+  width: calc(100% - 32px);
+}
+
+.btn-text {
   color: #fefefe;
   font-size: 1.8rem;
   line-height: 48px;
 }
 
+.back-btn {
+  margin-top: 24px;
+  background-color: #fefefe;
+}
+
+.back-btn-text {
+  color: #9473DE;
+}
+
+.caution {
+  color: #fefefe;
+  margin: 8px auto;
+}
+
 .right {
   margin-top: 16px;
-  margin-bottom: 16px;
+  margin-bottom: 32px;
 }
 
 .pc-right {
@@ -208,6 +256,21 @@ input[class="color-item-input"]:checked + label {
     width: 100%;
     margin-bottom: 24px;
     box-shadow: none;
+  }
+  .modal-parent {
+    text-align: center;
+    /* display: flex; */
+    /* justify-content: space-between; */
+  }
+  .modal-btn {
+    width: 30%;
+    margin: 16px auto;
+  }
+  .complete-img {
+    width: 30%;
+  }
+  .caution {
+    display: none;
   }
   .right {
     display: none;

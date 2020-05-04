@@ -45,11 +45,17 @@ export default {
       }
 
       document.getElementById("complete").onclick = () => {
-        const link = document.createElement("a");
+        const completeBtn = document.createElement("a");
         const href = canvas.toDataURL("image/png");
-        link.href = href;
-        link.download = "umiushi.png";
-        link.click();
+        this.$emit('img-url', href);
+        completeBtn.click();
+
+        document.getElementById("download").onclick = () => {
+          const downloadBtn = document.createElement("a");
+          downloadBtn.href = href;
+          downloadBtn.download = "umiushi.png";
+          downloadBtn.click();
+        }
       }
     },
   },

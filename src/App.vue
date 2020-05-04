@@ -10,6 +10,7 @@
         <main-canvas
           :shape="shape"
           :color="color"
+          @img-url="getImgUrl"
         ></main-canvas>
         <p class="text pc-right">© 2020 @avocadoneko</p>
       </div>
@@ -51,13 +52,28 @@
             v-show="picked === 'radio_back-ground'"
             @bg-color="getBgColor"
           ></back-ground>
-          <p class="text">※iPhone(Safari)の場合は、ダウンロードボタンをタップした後、</p>
-          <p class="text">表示をタップし、表示された画像を長押ししてください。</p>
         </div>
-        <div id="complete" class="complete-btn">
-          <p class="text complete-btn-text">ダウンロード</p>
+        <div @click="openModal()" id="complete" class="btn complete-btn">
+          <p class="text btn-text">かんせい</p>
         </div>
         <p class="text right">© 2020 @avocadoneko</p>
+        <div v-if="showModal" class="overlay">
+          <div class="modal">
+            <div class="close-btn">
+              <i @click="closeModal()" class="fas fa-times fa-3x"></i>
+            </div>
+            <div class="modal-parent">
+              <img :src="imgUrl" class="complete-img">
+              <p class="text caution">iPhone の場合は、画像を長押しすると保存ができます。</p>
+              <div id="download" class="btn modal-btn">
+                <p class="text btn-text">ダウンロード</p>
+              </div>
+              <div @click="closeModal()" class="btn back-btn modal-btn">
+                <p class="text btn-text back-btn-text">もどる</p>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
   </div>
@@ -113,6 +129,12 @@ export default {
     getImgUrl(url) {
       this.imgUrl = url
     },
+    openModal() {
+      this.showModal = true;
+    },
+    closeModal() {
+      this.showModal = false;
+    }
   },
   data() {
     return {
@@ -137,6 +159,7 @@ export default {
         'radio_color_bg1'
       ],
       imgUrl: '',
+      showModal: false,
     }
   }
 }
