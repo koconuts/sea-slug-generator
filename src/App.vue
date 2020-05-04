@@ -8,7 +8,6 @@
         <main-canvas
           :shape="shape"
           :color="color"
-          @img-url="getImgUrl"
         ></main-canvas>
       </div>
       <div class="right-container">
@@ -51,17 +50,8 @@
           ></back-ground>
         </div>
         <div class="complete-btn">
-          <p id="complete" class="text complete-btn-text">かんせい</p>
+          <p id="complete" class="text complete-btn-text">ダウンロード</p>
         </div>
-      </div>
-    </div>
-    <div class="overlay">
-      <div class="modal">
-        <button @click="$emit('close')">close</button>
-        <img :src="imgUrl" style="width:100%;">
-        <p>長押しすると画像の保存ができます</p>
-        <button id="download">ダウンロード</button>
-        <div class="btns"></div>
       </div>
     </div>
   </div>
@@ -116,7 +106,7 @@ export default {
     },
     getImgUrl(url) {
       this.imgUrl = url
-    }
+    },
   },
   data() {
     return {

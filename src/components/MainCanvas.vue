@@ -44,11 +44,10 @@ export default {
         }
       }
 
-      document.getElementById("download").onclick = () => {
+      document.getElementById("complete").onclick = () => {
         const link = document.createElement("a");
         const href = canvas.toDataURL("image/png");
         link.href = href;
-        this.$emit('img-url', href);
         link.download = "test.png";
         link.click();
       }
